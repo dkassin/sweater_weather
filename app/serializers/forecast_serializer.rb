@@ -1,10 +1,8 @@
 class ForecastSerializer
-
   def self.forecast_serializer(forecast)
-
     {
       "data": {
-        "id": null,
+        "id": nil,
         "type": "forecast",
         "attributes": {
           "current_weather": {
@@ -17,9 +15,8 @@ class ForecastSerializer
             "uvi": forecast[:current][:uvi],
             "visibility": forecast[:current][:visibility],
             "conditions": forecast[:current][:weather][0][:description],
-            "icon": forecast[:current][:weather][0][:icon],
+            "icon": forecast[:current][:weather][0][:icon]
           },
-
           "daily_weather": forecast[:daily].shift(5).map do |day|
             {
               "date": Date.jd(day[:dt]),
@@ -31,8 +28,7 @@ class ForecastSerializer
               "conditions": day[:weather][0][:description],
               "icon": day[:weather][0][:icon]
             }
-            end
-          ,
+          end,
           "hourly_weather": forecast[:hourly].shift(8).map do |hour|
             {
               "time": Time.at(hour[:dt]),
@@ -41,7 +37,7 @@ class ForecastSerializer
               "icon": hour[:weather][0][:icon]
             }
             end
-        }
+          }
       }
     }
   end
