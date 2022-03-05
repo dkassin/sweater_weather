@@ -24,7 +24,6 @@ class ForecastSerializer
               "sunset": Time.at(day[:sunrise]),
               "max_temp": day[:temp][:max],
               "min_temp": day[:temp][:min],
-              "min_temp": day[:temp][:min],
               "conditions": day[:weather][0][:description],
               "icon": day[:weather][0][:icon]
             }
