@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.pexels.com/v1/search?query=Denver,CO
+    uri: https://api.pexels.com/v1/search?query=denver,co
     body:
       encoding: US-ASCII
       string: ''
@@ -21,26 +21,26 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 05 Mar 2022 23:48:56 GMT
+      - Sat, 05 Mar 2022 23:48:55 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '2476'
+      - '2486'
       Connection:
       - keep-alive
       Cf-Ray:
-      - 6e76becc9db84959-STL
+      - 6e76bec60933494d-STL
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - __cf_bm=RodfspnZFxu62PXYFW0g8JcN7AWUuOmceNyd7IDcmjA-1646524136-0-AWJ8kSCq9VkfXFlfQ7uJkkl1ePV6lNyr3CDo6ZarsBJWBQ5Bt7ZUb1IiZMOUjZ5RYt0p0ms1EJKyTehf8N5F9hM=;
-        path=/; expires=Sun, 06-Mar-22 00:18:56 GMT; domain=.pexels.com; HttpOnly;
+      - __cf_bm=QntUrDIjUVxY.H77krycCkodyXyNQ.3egxSopZbwQwI-1646524135-0-ActCGJKKDyoIPJ4VBABfvTd3LZs+P0w8sqEyfTBVL6H7kMYLYzv2F/i1PAb8RMNc7HQc5Gl443IPbg3eoP2TQB4=;
+        path=/; expires=Sun, 06-Mar-22 00:18:55 GMT; domain=.pexels.com; HttpOnly;
         Secure; SameSite=None
-      - __cf_bm=nyqJpJKaUQJTYNGubZYZV67PKX.4e6So1P9MC8LrMnw-1646520106-0-AaeionzahLQ4j1G27WOm93+0JyyacBWhm4+xv8fxbk3bIZ061yzlHw0AlrKUWnQEVw6gf94yMRtt3WC6tZl1V+k=;
-        path=/; expires=Sat, 05-Mar-22 23:11:46 GMT; domain=.pexels.com; HttpOnly;
+      - __cf_bm=zRfeUAphDwhFfTTeiN4W2REzzcgymTDMIq7iGpFRweM-1646522719-0-AdP1IruXnAzJUwws8xhZaFUMoLaIaw9xc/nYHC2mpyax6ZJVj0J59560Jajs++LU5IUml6NXQTp1K0IO37Aeirg=;
+        path=/; expires=Sat, 05-Mar-22 23:55:19 GMT; domain=.pexels.com; HttpOnly;
         Secure; SameSite=None
-      - _mkra_stck=mysql%3A1646520111.2380319; path=/; max-age=10; expires=Sat, 05
-        Mar 2022 22:41:56 GMT; HttpOnly
+      - _mkra_stck=mysql%3A1646522724.435383; path=/; max-age=10; expires=Sat, 05
+        Mar 2022 23:25:29 GMT; HttpOnly
       Vary:
       - Origin, Accept-Encoding
       Cf-Cache-Status:
@@ -54,13 +54,13 @@ http_interactions:
       X-Ratelimit-Limit:
       - '20000'
       X-Ratelimit-Remaining:
-      - '19985'
+      - '19986'
       X-Ratelimit-Reset:
       - '1649040106'
       X-Request-Id:
-      - f4da112c-8039-4247-99f7-05b96ab636ea
+      - f35e04e6-2fc0-4bcd-99cc-390ef3170094
       X-Runtime:
-      - '0.140593'
+      - '0.144565'
       X-Server:
       - anteater
       X-Tyk-Cached-Response:
@@ -90,6 +90,6 @@ http_interactions:
         Of People Talking To Each Other"},{"id":5862308,"width":4386,"height":6579,"url":"https://www.pexels.com/photo/vaccine-text-and-a-person-wearing-latex-glove-while-holding-a-syringe-on-pink-background-5862308/","photographer":"Thirdman","photographer_url":"https://www.pexels.com/@thirdman","photographer_id":3361091,"avg_color":"#EEC9D4","src":{"original":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg","large2x":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"Vaccine
         Text and A Person Wearing Latex Glove While Holding a Syringe on Pink Background"},{"id":5878504,"width":2160,"height":3840,"url":"https://www.pexels.com/photo/a-close-up-view-of-a-covid-19-vaccine-vial-on-blue-background-5878504/","photographer":"Artem
         Podrez","photographer_url":"https://www.pexels.com/@artempodrez","photographer_id":2951544,"avg_color":"#6D80C4","src":{"original":"https://images.pexels.com/photos/5878504/pexels-photo-5878504.jpeg","large2x":"https://images.pexels.com/photos/5878504/pexels-photo-5878504.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/5878504/pexels-photo-5878504.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/5878504/pexels-photo-5878504.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/5878504/pexels-photo-5878504.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/5878504/pexels-photo-5878504.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/5878504/pexels-photo-5878504.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/5878504/pexels-photo-5878504.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"A
-        Close-Up View of a Covid-19 Vaccine Vial on Blue Background"}],"total_results":2234,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=15\u0026query=Denver%2CCO"}'
-  recorded_at: Sat, 05 Mar 2022 23:48:56 GMT
+        Close-Up View of a Covid-19 Vaccine Vial on Blue Background"}],"total_results":2234,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=15\u0026query=denver%2Cco"}'
+  recorded_at: Sat, 05 Mar 2022 23:48:55 GMT
 recorded_with: VCR 6.0.0

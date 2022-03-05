@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 05 Mar 2022 23:48:56 GMT
+      - Sat, 05 Mar 2022 23:48:54 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -29,12 +29,12 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 6e76becc9db84959-STL
+      - 6e76bebe3c4d493d-STL
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - __cf_bm=RodfspnZFxu62PXYFW0g8JcN7AWUuOmceNyd7IDcmjA-1646524136-0-AWJ8kSCq9VkfXFlfQ7uJkkl1ePV6lNyr3CDo6ZarsBJWBQ5Bt7ZUb1IiZMOUjZ5RYt0p0ms1EJKyTehf8N5F9hM=;
-        path=/; expires=Sun, 06-Mar-22 00:18:56 GMT; domain=.pexels.com; HttpOnly;
+      - __cf_bm=lXe3UQx8xSuJuBJzxeqEi.DMyZ82M7JE9PEl7DCS2W0-1646524134-0-Aa6qWUgGO2IMG1sv2nRfJrOdCxn5YbPVUXO1bSsE0N9qJAP6bW46GZu9/Cs8ULqQkrSg+miZL6LYFMq969CSVH0=;
+        path=/; expires=Sun, 06-Mar-22 00:18:54 GMT; domain=.pexels.com; HttpOnly;
         Secure; SameSite=None
       - __cf_bm=nyqJpJKaUQJTYNGubZYZV67PKX.4e6So1P9MC8LrMnw-1646520106-0-AaeionzahLQ4j1G27WOm93+0JyyacBWhm4+xv8fxbk3bIZ061yzlHw0AlrKUWnQEVw6gf94yMRtt3WC6tZl1V+k=;
         path=/; expires=Sat, 05-Mar-22 23:11:46 GMT; domain=.pexels.com; HttpOnly;
@@ -54,7 +54,7 @@ http_interactions:
       X-Ratelimit-Limit:
       - '20000'
       X-Ratelimit-Remaining:
-      - '19985'
+      - '19987'
       X-Ratelimit-Reset:
       - '1649040106'
       X-Request-Id:
@@ -91,5 +91,5 @@ http_interactions:
         Text and A Person Wearing Latex Glove While Holding a Syringe on Pink Background"},{"id":5878504,"width":2160,"height":3840,"url":"https://www.pexels.com/photo/a-close-up-view-of-a-covid-19-vaccine-vial-on-blue-background-5878504/","photographer":"Artem
         Podrez","photographer_url":"https://www.pexels.com/@artempodrez","photographer_id":2951544,"avg_color":"#6D80C4","src":{"original":"https://images.pexels.com/photos/5878504/pexels-photo-5878504.jpeg","large2x":"https://images.pexels.com/photos/5878504/pexels-photo-5878504.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/5878504/pexels-photo-5878504.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/5878504/pexels-photo-5878504.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/5878504/pexels-photo-5878504.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/5878504/pexels-photo-5878504.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/5878504/pexels-photo-5878504.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/5878504/pexels-photo-5878504.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false,"alt":"A
         Close-Up View of a Covid-19 Vaccine Vial on Blue Background"}],"total_results":2234,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=15\u0026query=Denver%2CCO"}'
-  recorded_at: Sat, 05 Mar 2022 23:48:56 GMT
+  recorded_at: Sat, 05 Mar 2022 23:48:54 GMT
 recorded_with: VCR 6.0.0

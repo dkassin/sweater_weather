@@ -7,7 +7,7 @@ RSpec.describe 'Forecast Service' do
       expect(connection).to be_a(Faraday::Connection)
   end
 
-  it 'returns a recipe at random', :vcr do
+  it 'returns a forecast', :vcr do
       lat = 39.738453
       lng = -104.984853
       get_forecast = ForecastService.get_forecast(lat, lng)

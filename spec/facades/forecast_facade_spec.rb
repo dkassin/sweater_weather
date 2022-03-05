@@ -7,6 +7,8 @@ RSpec.describe ForecastFacade, type: :facade do
           lat = 39.738453
           lng = -104.984853
           forecast = ForecastFacade.get_forecast(lat, lng)
+
+          expect(forecast).to be_a Hash
       end
     end
   end

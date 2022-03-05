@@ -3,13 +3,13 @@ require 'rails_helper'
 
 RSpec.describe 'Image Service' do
   it 'returns a faraday response' , :vcr do
-      connection = ImageService.connection
+      connection = BackgroundService.connection
       expect(connection).to be_a(Faraday::Connection)
   end
 
   it 'returns a recipe at random', :vcr do
       location = "Denver,CO"
-      get_image = ImageService.get_image(location)
+      get_image = BackgroundService.get_image(location)
 
       expect(get_image).to be_a Hash
       expect(get_image[:photos]).to be_a Array

@@ -1,4 +1,4 @@
-class ImageService
+class BackgroundService
 
   def self.connection
     url = "https://api.pexels.com/v1/search?"
