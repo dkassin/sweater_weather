@@ -11,6 +11,8 @@ class ForecastService
     response = connection.get do |faraday|
       faraday.params['lat'] = lat
       faraday.params['lon'] = lng
+      faraday.params['units'] = "imperial"
+      faraday.params['exclude'] = 'minutely'
     end
     JSON.parse(response.body, symbolize_names: true)
   end
