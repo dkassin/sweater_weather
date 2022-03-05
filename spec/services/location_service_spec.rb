@@ -2,12 +2,12 @@
 require 'rails_helper'
 
 RSpec.describe 'Location Service' do
-  it 'returns a faraday response' do
+  it 'returns a faraday response' , :vcr do
       connection = LocationService.connection
       expect(connection).to be_a(Faraday::Connection)
   end
 
-  it 'returns a recipe at random' do
+  it 'returns a recipe at random', :vcr do
       location = "Denver,CO"
       get_location = LocationService.get_location(location)
 
