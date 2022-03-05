@@ -1,15 +1,15 @@
 
 require 'rails_helper'
 
-RSpec.describe 'Forecast Service' do
+RSpec.describe 'Location Service' do
   it 'returns a faraday response' do
-      connection = ForecastService.connection
+      connection = LocationService.connection
       expect(connection).to be_a(Faraday::Connection)
   end
 
   it 'returns a recipe at random' do
       location = "Denver,CO"
-      get_location = ForecastService.get_location(location)
+      get_location = LocationService.get_location(location)
 
       expect(get_location).to be_a Hash
       expect(get_location[:results]).to be_a Array
