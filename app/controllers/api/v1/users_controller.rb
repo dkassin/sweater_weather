@@ -5,7 +5,7 @@ class Api::V1::UsersController < ApplicationController
       new_user = User.create(user_params)
       render json: UserSerializer.user(new_user)
     else
-      render status: 404
+      render json: JSON.generate({error: 'invalid login credentials'}), status: 400
     end
   end
 
