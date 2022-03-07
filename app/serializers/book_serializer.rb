@@ -1,41 +1,25 @@
 class BookSerializer
-  def self.book_serializer(books, forecast, location, qauntity)
-    {
-  "data": {
-    "id": "null",
-    "type": "books",
-    "attributes": {
-      "destination": "denver,co",
-      "forecast": {
-        "summary": "Cloudy with a chance of meatballs",
-        "temperature": "83 F"
-      },
-      "total_books_found": 172,
-      "books": [
-        {
-          "isbn": [
-            "0762507845",
-            "9780762507849"
-          ],
-          "title": "Denver, Co",
-          "publisher": [
-            "Universal Map Enterprises"
-          ]
+  def self.book_serializer(books, forecast, location, quantity)
+      {
+    "data": {
+      "id": "null",
+      "type": "books",
+      "attributes": {
+        "destination": location,
+        "forecast": {
+          "summary": forecast[:current][:weather][0][:description],
+          "temperature": forecast[:current][:temp]
         },
-        {
-          "isbn": [
-            "9780883183663",
-            "0883183668"
-          ],
-          "title": "Photovoltaic safety, Denver, CO, 1988",
-          "publisher": [
-            "American Institute of Physics"
-          ]
-        },
-        
-      ]
+        "total_books_found": books[:numFound],
+        "books": books[:docs].shift(quantity.to_i).map do |book|
+          {
+            "isbn": book[:isbn],
+            "title": book[:title],
+            "publisher": book[:publisher]
+          }
+        end
+        }
+      }
     }
-  }
-}
   end
 end
