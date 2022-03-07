@@ -2,7 +2,8 @@ require 'rails_helper'
 RSpec.describe 'Forecast API' do
   it 'returns a forecast', :vcr do
 
-    get "/api/v1/forecast?location=denver,co"
+    headers = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
+    get "/api/v1/forecast?location=denver,co", headers: headers
 
 
     forecast = JSON.parse(response.body, symbolize_names: true)

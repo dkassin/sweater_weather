@@ -2,7 +2,8 @@ require 'rails_helper'
 RSpec.describe 'Image API' do
   it 'returns an image details' , :vcr do
 
-    get "/api/v1/backgrounds?location=denver,co"
+    headers = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
+    get "/api/v1/backgrounds?location=denver,co", headers: headers
 
     image = JSON.parse(response.body, symbolize_names: true)
 
