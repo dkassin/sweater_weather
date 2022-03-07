@@ -6,7 +6,7 @@ RSpec.describe 'book search API' do
 
 
     book_search = JSON.parse(response.body, symbolize_names: true)
-
+    
     expect(response).to be_successful
     expect(response.status).to eq(200)
     expect(book_search).to be_a Hash
