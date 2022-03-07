@@ -5,7 +5,7 @@ class BookService
     Faraday.new(url: url)
   end
 
-  def self.get_books(location, quantity)
+  def self.get_books(location)
     response = connection.get do |faraday|
       faraday.params['q'] = location
     end

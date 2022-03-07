@@ -1,5 +1,5 @@
 class BookFacade
-  def self.get_books(location, quantity)
-    books = BookService.get_books(location, quantity)
+  def self.get_books(location)
+    books = BookService.get_books(location)
   end
 end

@@ -6,7 +6,7 @@ RSpec.describe BookFacade, type: :facade do
       it 'should return a hash of the image' , :vcr do
           location = "Denver,CO"
           quantity = 5
-          books = BookFacade.get_books(location, quantity)
+          books = BookFacade.get_books(location)
 
           expect(books).to be_a Hash
       end

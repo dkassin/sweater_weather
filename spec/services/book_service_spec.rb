@@ -10,7 +10,7 @@ RSpec.describe 'Book Service' do
   it 'returns a recipe at random' , :vcr do
       location = "Denver,CO"
       quantity = 5
-      get_books = BookService.get_books(location, quantity)
+      get_books = BookService.get_books(location)
 
       expect(get_books).to be_a Hash
       expect(get_books).to have_key :numFound
