@@ -23,6 +23,17 @@ RSpec.describe 'book search API' do
     expect(book_search[:data][:attributes][:books][0]).to have_key(:publisher)
   end
 
+  it 'returns an error if a location isnt provded ', :vcr do
+
+    get "/api/v1/book-search?location=&quantity=5"
+
+
+    book_search = JSON.parse(response.body, symbolize_names: true)
+
+    expect(response).to_not be_successful
+    expect(response.status).to eq(400)
+  end
+
   it 'returns a book search even with a negative quantity', :vcr do
 
     get "/api/v1/book-search?location=denver,co&quantity=-5"
