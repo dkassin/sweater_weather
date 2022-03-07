@@ -13,7 +13,7 @@ RSpec.describe 'user API' do
     user = JSON.parse(response.body, symbolize_names: true)
 
     expect(response).to be_successful
-    expect(response.status).to eq(200)
+    expect(response.status).to eq(201)
     expect(user).to be_a Hash
 
     expect(user[:data]).to have_key(:type)

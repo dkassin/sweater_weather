@@ -3,7 +3,7 @@ class Api::V1::UsersController < ApplicationController
   def create
     if params[:password] == params[:password_confirmation] && params[:email].present?
       new_user = User.create(user_params)
-      render json: UserSerializer.user(new_user)
+      render json: UserSerializer.user(new_user), status: 201
     else
       render json: JSON.generate({error: 'invalid login credentials'}), status: 400
     end

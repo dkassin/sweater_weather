@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 07 Mar 2022 02:59:51 GMT
+      - Mon, 07 Mar 2022 03:28:31 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -29,7 +29,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 6e8013d69a594949-STL
+      - 6e803dd50cea495d-STL
       Access-Control-Allow-Origin:
       - "*"
       Cache-Control:
@@ -37,11 +37,11 @@ http_interactions:
       Etag:
       - W/"7257a1595639b67794b1705149574029"
       Set-Cookie:
-      - __cf_bm=An9jcXMy1_FJSPEY1yOi7c0M_ZbNSKDl28qT_EwwyF4-1646621991-0-AfwGT5+U8gWQgT1qX0yw2uWwK4NqWKXGXIPyZWsWWSnhHlVR4ydalRubTjFTdyMSAGu0QUqKO/+QzXHzneZ2+Tk=;
-        path=/; expires=Mon, 07-Mar-22 03:29:51 GMT; domain=.pexels.com; HttpOnly;
+      - __cf_bm=vhxqGRJhZfNiHL9vADC.1Z4_ALgX4rnnEfkFghwL9Ds-1646623711-0-Ae3hGdZ6YddhndwpQ3MmwSIdBAnIpZAsZYPoy6r/d3Zt2nz2fMJqUYZwI+QhO18IJXIR6fekQPqClnUpBv7CYPo=;
+        path=/; expires=Mon, 07-Mar-22 03:58:31 GMT; domain=.pexels.com; HttpOnly;
         Secure; SameSite=None
-      - _mkra_stck=mysql%3A1646621996.6526945; path=/; max-age=10; expires=Mon, 07
-        Mar 2022 03:00:01 GMT; HttpOnly
+      - _mkra_stck=mysql%3A1646623716.7043202; path=/; max-age=10; expires=Mon, 07
+        Mar 2022 03:28:41 GMT; HttpOnly
       Cf-Cache-Status:
       - DYNAMIC
       Expect-Ct:
@@ -51,11 +51,11 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '20000'
       X-Request-Id:
-      - 20227ccf-af08-4434-a2fa-e850ab466b47
+      - a0b418d8-a4d8-4655-a57d-e4f3e50c6faf
       X-Runtime:
-      - '0.093951'
+      - '0.061144'
       X-Server:
-      - alpaca
+      - anteater
       Vary:
       - Accept-Encoding
       Server:
@@ -86,5 +86,5 @@ http_interactions:
         View Photo of Group of People Using Macbook While Discussing"},{"id":3182765,"width":6000,"height":4169,"url":"https://www.pexels.com/photo/photo-of-people-talking-to-each-other-3182765/","photographer":"fauxels","photographer_url":"https://www.pexels.com/@fauxels","photographer_id":1281351,"avg_color":"#B1A79C","src":{"original":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg","large2x":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"alt":"Photo
         Of People Talking To Each Other"},{"id":5862308,"width":4386,"height":6579,"url":"https://www.pexels.com/photo/vaccine-text-and-a-person-wearing-latex-glove-while-holding-a-syringe-on-pink-background-5862308/","photographer":"Thirdman","photographer_url":"https://www.pexels.com/@thirdman","photographer_id":3361091,"avg_color":"#EEC9D4","src":{"original":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg","large2x":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"alt":"Vaccine
         Text and A Person Wearing Latex Glove While Holding a Syringe on Pink Background"}],"total_results":2233,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=15\u0026query=Denver%2CCO"}'
-  recorded_at: Mon, 07 Mar 2022 02:59:51 GMT
+  recorded_at: Mon, 07 Mar 2022 03:28:31 GMT
 recorded_with: VCR 6.0.0
