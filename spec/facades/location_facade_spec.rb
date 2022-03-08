@@ -8,6 +8,14 @@ RSpec.describe LocationFacade, type: :facade do
           location = LocationFacade.get_location(locale)
           expect(location).to be_a(Location)
       end
+
+      it 'should return a direction object', :vcr do
+        origin = "Denver,CO"
+        destination = "Pueblo,CO"
+        directions = LocationFacade.get_directions(origin, destination)
+        expect(directions).to be_a(Direction)
+
+      end
     end
   end
 end

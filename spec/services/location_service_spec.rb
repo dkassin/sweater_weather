@@ -25,11 +25,10 @@ RSpec.describe 'Location Service' do
 
   it 'returns directions', :vcr do
       origin = "Denver,CO"
-      destination = "Pueblo,CO"
+      destination = "Littleton,CO"
       get_directions = LocationService.get_directions(origin, destination)
 
       expect(get_directions).to be_a Hash
-
       expect(get_directions[:route]).to be_a Hash
       expect(get_directions[:route]).to have_key :formattedTime
       expect(get_directions[:route]).to have_key :boundingBox

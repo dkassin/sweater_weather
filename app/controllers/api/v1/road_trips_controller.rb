@@ -1,6 +1,7 @@
 class Api::V1::RoadTripsController < ApplicationController
   # before_action :check_location
   def index
+    binding.pry
   end
 end
 
