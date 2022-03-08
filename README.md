@@ -238,7 +238,7 @@ At this point you should be taken to a page with an example JSON response for a 
 <!-- markdownlint-disable -->
 <table>
   <tr>
-      <td align="center"><a href="https://github.com/dkassin"><img src="https://avatars.githubusercontent.com/u/76177498?v=4" width="100px;" alt=""/><br /><sub><b>David(he/him)</b></sub></a><br /><a href="https://github.com/cuisine-odyssey/backend_application/commits?author=dkassin" title="Code">💻</a> <a href="https://github.com/Cuisine-Odyssey/backend_application/pulls?q=is%3Apr+author%3Adkassin" title="Reviewed Pull Requests">👀</a>
+      <td align="center"><a href="https://github.com/dkassin"><img src="https://avatars.githubusercontent.com/u/76177498?v=4" width="100px;" alt=""/><br /><sub><b>David(he/him)</b></sub></a><br /><a href="https://github.com/dkassin/sweater_weather/commits?author=dkassin" title="Code">💻</a> <a href="https://github.com/dkassin/sweater_weather/pulls?q=is%3Apr+author%3Adkassin" title="Reviewed Pull Requests">👀</a>
     </tr>
 </table>
 
