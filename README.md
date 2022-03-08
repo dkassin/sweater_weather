@@ -184,35 +184,36 @@ At this point you should be taken to a page with an example JSON response for a 
   Content-Type: application/json
   Accept: application/json
 
-{
+  {
   "email": "whatever@example.com",
   "password": "password",
   "password_confirmation": "password"
-}
+  }
 
 - POST /api/v1/sessions
   Content-Type: application/json
   Accept: application/json
 
-{
+  {
   "email": "whatever@example.com",
   "password": "password"
-}
+  }
+
 - POST /api/v1/road_trip
   Content-Type: application/json
   Accept: application/json
 
-body:
+  body:
 
-{
+  {
   "origin": "Denver,CO",
   "destination": "Pueblo,CO",
   "api_key": "jgn983hy48thw9begh98h4539h4"
-}
+  }
 ```
-### example request/response for GET /API/V1/USERS/1
+### example request/response for GET /api/v1/forecast?location=denver,co
 
-![Screen Shot 2022-02-24 at 7 05 35 PM](https://user-images.githubusercontent.com/89998621/156661614-e9322ba1-0965-4cb7-bf69-905f271ff1b3.png)
+![Screen Shot 2022-03-08 at 1 55 43 PM](https://user-images.githubusercontent.com/76177498/157323619-74e0163a-0e6f-4e76-a144-756be78e5f3f.png)
 
 ### example for a recipe request: 
 
@@ -239,4 +240,5 @@ Cocktail endpoints are the same as recipe endpoints but give details about drink
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification.
 <!--
+
 
