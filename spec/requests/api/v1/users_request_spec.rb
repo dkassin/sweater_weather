@@ -24,4 +24,54 @@ RSpec.describe 'user API' do
     expect(user[:data][:attributes]).to_not have_key(:password)
     expect(user[:data][:attributes]).to_not have_key(:password_confirmation)
   end
+
+  it 'returns an error if fields are missing', :vcr do
+    data =
+    {
+      "email": "whatever1@example.com",
+      "password": "password"
+    }
+    headers = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
+    post '/api/v1/users', headers: headers, params: JSON.generate(data)
+
+    user = JSON.parse(response.body, symbolize_names: true)
+
+    expect(response).to_not be_successful
+    expect(response.status).to eq(400)
+    expect(user).to be_a Hash
+  end
+
+  it 'returns an error if emails are not unique', :vcr do
+    user = User.create(email: "test@email.com", password: "password", password_confirmation: "password")
+    data =
+    {
+      "email": "test@email.com",
+      "password": "password",
+      "password_confirmation": "password"
+    }
+    headers = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
+    post '/api/v1/users', headers: headers, params: JSON.generate(data)
+
+    user = JSON.parse(response.body, symbolize_names: true)
+
+    expect(response).to_not be_successful
+    expect(response.status).to eq(400)
+    expect(user).to be_a Hash
+  end
+
+  it 'returns an error if passwords do not match', :vcr do
+    data =
+    {
+      "email": "test@example.com",
+      "password": "wrongpassword",
+      "password_confirmation": "password"
+    }
+    headers = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
+    post '/api/v1/users', headers: headers, params: JSON.generate(data)
+
+    user = JSON.parse(response.body, symbolize_names: true)
+
+    expect(response).to_not be_successful
+    expect(response.status).to eq(400)
+  end
 end
