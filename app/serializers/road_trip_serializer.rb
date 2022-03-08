@@ -16,4 +16,22 @@ class RoadTripSerializer
       }
     }
   end
+
+  def self.invalid_trip(origin, destination)
+        {
+      "data": {
+        "id": nil,
+        "type": "roadtrip",
+        "attributes": {
+          "start_city": origin,
+          "end_city": destination,
+          "travel_time": "impossible",
+          "weather_at_eta": {
+            "temperature": "",
+            "conditions": ""
+          }
+        }
+      }
+    }
+  end
 end
