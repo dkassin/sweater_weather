@@ -6,6 +6,11 @@ class LocationFacade
 
   def self.get_directions(origin, destination)
     directions = LocationService.get_directions(origin, destination)
-    Direction.new(directions)
+    if directions[:info][:statuscode] == 402
+      Invalid.new(directions)
+    else
+      binding.pry
+      Direction.new(directions)
+    end
   end
 end

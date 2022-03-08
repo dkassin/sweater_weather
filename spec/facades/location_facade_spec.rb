@@ -20,7 +20,7 @@ RSpec.describe LocationFacade, type: :facade do
         origin = "Denver,CO"
         destination = "London,UK"
         directions = LocationFacade.get_directions(origin, destination)
-        expect(directions).to be_a(Direction)
+        expect(directions).to be_a(Invalid)
       end
     end
   end

@@ -37,7 +37,7 @@ RSpec.describe 'road trip API' do
     expect(road_trip[:data][:attributes][:weather_at_eta][:conditions]).to be_a String
   end
 
-  it 'returns a road trip', :vcr do
+  it 'returns an error when the api key is not found or incorrect', :vcr do
     data =
     {
     "origin": "Denver,CO",
