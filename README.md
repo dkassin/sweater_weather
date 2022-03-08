@@ -176,9 +176,9 @@ At this point you should be taken to a page with an example JSON response for a 
 
 - GET /api/v1/backgrounds?location=denver,co
 
-### For the following endpoints must send a JSON payload in the body of the request
+** For the following endpoints must send a JSON payload in the body of the request **
 
-#### After properly registering through the following endpoint you will be given an api key
+** After properly registering through the following endpoint you will be given an api key **
 
 - POST /api/v1/users
   Content-Type: application/json
