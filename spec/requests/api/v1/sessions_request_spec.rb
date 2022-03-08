@@ -25,4 +25,37 @@ RSpec.describe 'session API' do
     expect(user[:data][:attributes]).to_not have_key(:password)
     expect(user[:data][:attributes]).to_not have_key(:password_confirmation)
   end
+  it 'returns a an error for a bad password', :vcr do
+    user = User.create(email: "test@email.com", password: "password", password_confirmation: "password")
+    data =
+    {
+      "email": "test@email.com",
+      "password": "notpassword"
+    }
+
+    headers = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
+    post '/api/v1/sessions', headers: headers, params: JSON.generate(data)
+
+    user = JSON.parse(response.body, symbolize_names: true)
+
+    expect(response).to_not be_successful
+    expect(response.status).to eq(400)
+  end
+
+  it 'returns a an error for a bad email', :vcr do
+    user = User.create(email: "test@email.com", password: "password", password_confirmation: "password")
+    data =
+    {
+      "email": "notgoodemail@email.com",
+      "password": "password"
+    }
+
+    headers = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
+    post '/api/v1/sessions', headers: headers, params: JSON.generate(data)
+
+    user = JSON.parse(response.body, symbolize_names: true)
+
+    expect(response).to_not be_successful
+    expect(response.status).to eq(400)
+  end
 end
