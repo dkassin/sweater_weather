@@ -5,7 +5,8 @@ class Api::V1::RoadTripsController < ApplicationController
       directions = LocationFacade.get_directions(params[:origin], params[:destination])
       forecast = ForecastFacade.get_forecast(@coordinates.lat, @coordinates.lng)
       forecast_index = directions.rounded_hours - 1
-      if forecast_index <= 0
+
+      if forecast_index < 0
         forecast_current = forecast[:current]
         render json: RoadTripSerializer.road_trip_serializer(directions, forecast_current, params[:origin], params[:destination])
       elsif forecast_index <= 49
