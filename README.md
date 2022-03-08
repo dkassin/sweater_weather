@@ -211,16 +211,25 @@ At this point you should be taken to a page with an example JSON response for a 
   "api_key": "jgn983hy48thw9begh98h4539h4"
   }
 ```
-### example request/response for GET /api/v1/forecast?location=denver,co
+### example response for GET /api/v1/forecast?location=denver,co
 
 ![Screen Shot 2022-03-08 at 1 55 43 PM](https://user-images.githubusercontent.com/76177498/157323619-74e0163a-0e6f-4e76-a144-756be78e5f3f.png)
 
-### example for a recipe request: 
+### example response for GET /api/v1/backgrounds?location=denver,co
 
-![Screen Shot 2022-02-25 at 9 47 24 AM](https://user-images.githubusercontent.com/89998621/156661731-0d7eacca-b013-4e2f-afa5-9d6d4ed00606.png)
+![Screen Shot 2022-03-08 at 1 58 06 PM](https://user-images.githubusercontent.com/76177498/157323836-c2128fe8-91c9-4529-8b83-099dbcf47fd4.png)
 
-Cocktail endpoints are the same as recipe endpoints but give details about drink recipes rather than food items.
+### example response for POST /api/v1/users & POST /api/v1/sessions
 
+![Screen Shot 2022-03-08 at 1 59 00 PM](https://user-images.githubusercontent.com/76177498/157323956-548ce1c1-edbd-4488-a4c5-4aaf8cf1a96d.png)
+
+### example response for POST /api/v1/road_trip
+
+![Screen Shot 2022-03-08 at 2 00 54 PM](https://user-images.githubusercontent.com/76177498/157324257-2d1cf20a-1cea-49be-8920-8b74966635a8.png)
+
+### Attached is a zipfile of a postman collection for testing:
+
+[Sweater Weather.postman_collection.json.zip](https://github.com/dkassin/sweater_weather/files/8209596/Sweater.Weather.postman_collection.json.zip)
 
 ## **Contributors** ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
@@ -240,5 +249,4 @@ Cocktail endpoints are the same as recipe endpoints but give details about drink
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification.
 <!--
-
 
