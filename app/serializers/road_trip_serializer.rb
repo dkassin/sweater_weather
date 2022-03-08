@@ -1,16 +1,16 @@
 class RoadTripSerializer
-  def self.road_trip_serializer(forecast, travel)
+  def self.road_trip_serializer(directions, forecast_hour, origin, destination)
         {
       "data": {
-        "id": null,
+        "id": nil,
         "type": "roadtrip",
         "attributes": {
-          "start_city": "Denver, CO",
-          "end_city": "Estes Park, CO",
-          "travel_time": "2 hours, 13 minutes"
+          "start_city": origin,
+          "end_city": destination,
+          "travel_time": "#{directions.hour} hours, #{directions.min} minutes",
           "weather_at_eta": {
-            "temperature": 59.4,
-            "conditions": "partly cloudy with a chance of meatballs"
+            "temperature": forecast_hour[:temp],
+            "conditions": forecast_hour[:weather][0][:description]
           }
         }
       }

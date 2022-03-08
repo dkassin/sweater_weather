@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 08 Mar 2022 00:56:06 GMT
+      - Tue, 08 Mar 2022 01:59:05 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -29,7 +29,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 6e879beb1a44493d-STL
+      - 6e87f8316f344941-STL
       Access-Control-Allow-Origin:
       - "*"
       Cache-Control:
@@ -37,11 +37,11 @@ http_interactions:
       Etag:
       - W/"a75ee78094c833ffd72e77a963f08933"
       Set-Cookie:
-      - __cf_bm=oFnd1mJDrxGEE46FS4Mjk8eE2PvVC2CFUMfrWUSC9p0-1646700966-0-AbUjucPja64fUkkxBJXsyI6JOCbNrOK6+V53PpGQhQ1GflPiD/dj6EJM8JxgR9LqQychN2RkmuIS1hW6LKf4eq0=;
-        path=/; expires=Tue, 08-Mar-22 01:26:06 GMT; domain=.pexels.com; HttpOnly;
+      - __cf_bm=hGSCg97GGcEPpb7DMv19bAXUgD_H3KvzniFxBS3glLA-1646704745-0-AVbNPO7lIQb6UO6jTd728k5A/YYe9dldoiXjRScDXPJOWAZTvA0MS1tHjawcfN6LeJNdsGPY0waO5hlWP02g8ZA=;
+        path=/; expires=Tue, 08-Mar-22 02:29:05 GMT; domain=.pexels.com; HttpOnly;
         Secure; SameSite=None
-      - _mkra_stck=mysql%3A1646700971.518929; path=/; max-age=10; expires=Tue, 08
-        Mar 2022 00:56:16 GMT; HttpOnly
+      - _mkra_stck=mysql%3A1646704750.446401; path=/; max-age=10; expires=Tue, 08
+        Mar 2022 01:59:15 GMT; HttpOnly
       Cf-Cache-Status:
       - DYNAMIC
       Expect-Ct:
@@ -51,9 +51,9 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '20000'
       X-Request-Id:
-      - 01dfb4b9-655c-42d4-8003-4a4f0052cf9f
+      - 8338973c-2cfb-48d8-8806-5a722f96d939
       X-Runtime:
-      - '0.163103'
+      - '0.067006'
       X-Server:
       - anteater
       Vary:
@@ -86,5 +86,5 @@ http_interactions:
         of Man Sitting in Front of People"},{"id":3182773,"width":6000,"height":4004,"url":"https://www.pexels.com/photo/top-view-photo-of-group-of-people-using-macbook-while-discussing-3182773/","photographer":"fauxels","photographer_url":"https://www.pexels.com/@fauxels","photographer_id":1281351,"avg_color":"#62554E","src":{"original":"https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg","large2x":"https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"alt":"Top
         View Photo of Group of People Using Macbook While Discussing"},{"id":3182765,"width":6000,"height":4169,"url":"https://www.pexels.com/photo/photo-of-people-talking-to-each-other-3182765/","photographer":"fauxels","photographer_url":"https://www.pexels.com/@fauxels","photographer_id":1281351,"avg_color":"#B1A79C","src":{"original":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg","large2x":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"alt":"Photo
         Of People Talking To Each Other"}],"total_results":2234,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=15\u0026query=Denver%2CCO"}'
-  recorded_at: Tue, 08 Mar 2022 00:56:06 GMT
+  recorded_at: Tue, 08 Mar 2022 01:59:05 GMT
 recorded_with: VCR 6.0.0

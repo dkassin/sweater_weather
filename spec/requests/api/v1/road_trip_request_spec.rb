@@ -9,7 +9,7 @@ RSpec.describe 'road trip API' do
     "api_key": "jgn983hy48thw9begh98h4539h4"
     }
 
-    road_trip = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
+    headers = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
     post '/api/v1/road_trip', headers: headers, params: JSON.generate(data)
 
     road_trip = JSON.parse(response.body, symbolize_names: true)

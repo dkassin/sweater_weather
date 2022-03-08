@@ -26,8 +26,6 @@ RSpec.describe "Direction object" do
   expect(directions).to be_a Direction
   expect(directions.hour).to eq(1)
   expect(directions.min).to eq(45)
-  expect(directions.star_latlng).to eq({:lng=>-104.987602, :lat=>39.738453})
-  expect(directions.end_latlng).to eq({:lng=>-104.60508, :lat=>38.265427})
   expect(directions.arrival_time).to be_a(Time)
   expect(directions.rounded_hours).to eq(2)
   end
