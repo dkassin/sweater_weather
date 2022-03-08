@@ -1,42 +1,17 @@
 # Sweater Weather
 
-![languages](https://img.shields.io/github/languages/top/sweater_weather?color=red)
-![PRs](https://img.shields.io/github/issues-pr-closed/sweater_weather)
-![rspec](https://img.shields.io/gem/v/rspec?color=blue&label=rspec)
-![simplecov](https://img.shields.io/gem/v/simplecov?color=blue&label=simplecov) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/contributors-6-orange.svg?style=flat)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+## Description
 
+You are a back-end developer working on a team that is building an application to plan road trips. This app will allow users to see the current weather as well as the forecasted weather at the destination.
 
-## Background and Description
-
-"Cuisine Odyssey" is a group project inspired by the dilemma of not knowing what to cook for dinner. The app's interface allows the user to spin a globe or a bottle, depending on if they are looking for recipes or cocktails. When the user clicks to spin, a random region is selected and up to 5 recipes are generated. The user can choose to spin again, to save the recipe to their dashboard using a "like" feature, or dislike the recipes. This portion of the project encapsulates the back end of the application and provides API endpoints for the functionality of the user interface on the front end.
-
-[Heroku Website](https://shielded-forest-41795.herokuapp.com/)
-
-[Frontend Application](https://github.com/Cuisine-Odyssey/frontend_application)
-
-## Schema 
-
-![Screen Shot 2022-02-23 at 6 47 13 PM](https://user-images.githubusercontent.com/89998621/156648383-05beb0d5-a05b-43ed-ad63-3712d82fd04c.png)
-
-![Screen Shot 2022-03-03 at 11 16 17 AM](https://user-images.githubusercontent.com/39470230/156636664-360d9a85-74a8-482e-a82f-9c5bf3a54c35.png)
+Your team is working in a service-oriented architecture. The front-end will communicate with your back-end through an API. Your job is to expose that API that satisfies the front-end team’s requirements.
 
 ## Learning Goals
-
-- Consume two or more external APIs 
-- Implement Circle CI for continuous integration/testing
-- Build APIs that return JSON responses 
-- Use an external OAuth provider to authenticate users 
-- Refactor code for better code organization/readability 
-- Create an application with mircroservices for a smealess, separate frontend view and backend database. 
-- Implement a production-quality user interface using Bootstrap
-- Practice good project management by using project boards, participating in daily stand-ups and team retros 
-- Utilize quality workflow practices: small commits, descriptive pull requests, and code reviews 
-- Write thorough, understandable documentation
-
-
-
+- Expose an API that aggregates data from multiple external APIs
+- Expose an API that requires an authentication token
+- Expose an API for CRUD functionality
+- Determine completion criteria based on the needs of other developers
+- Research, select, and consume an API based on your needs as a developer
 ## Requirements and Setup (for Mac):
 
 ### Ruby and Rails
@@ -45,14 +20,12 @@
 
 ### Gems Utilized
 - RSpec 
+- bcrypt
 - Pry
 - SimpleCov
 - Capybara
 - Shoulda-Matchers 
-- Factory_Bot_Rails
-- Faker
 - jsonapi-serialize
-- omniauth-google-oauth2
 - Figaro
 - Webmock
 - VCR
@@ -60,6 +33,8 @@
 - rspec_junit_formatter
 - Orderly
 - dotenv-rails
+- faraday
+- launchy
 
 ## Setup
 1. Clone this repository:
@@ -68,21 +43,20 @@ On your local machine open a terminal session and enter the following commands f
 
 - using ssh key <br>
 ```shell
-$ git clone git@github.com:Cuisine-Odyssey/backend_application.git
+$ git clone git@github.com:dkassin/sweater_weather.git
 ```
 
 - using https <br>
 ```shell
-$ git clone https://github.com/Cuisine-Odyssey/backend_application
-```
+$ git clone https://github.com/dkassin/sweater_weather.git
 
 Once cloned, you'll have a new local copy in the directory you ran the clone command in.
 
 2. Change to the project directory:<br>
-In terminal, use `$cd` to navigate to the backend Application project directory.
+In terminal, use `$cd` to navigate to the sweater_application Application project directory.
 
 ```shell
-$ cd backend_application
+$ cd sweater_weather
 ```
 
 3. Install required Gems utilizing Bundler: <br>
@@ -191,22 +165,50 @@ $ rails s
 ```
 
 - Open web browser and visit link
-    http://localhost:3000/api/v1/users/1
+    http://localhost:3000/
     
 At this point you should be taken to a page with an example JSON response for a user
 
 ## Endpoints provided 
 ```
 
-- '/users', to users#show
+- GET /api/v1/forecast?location=denver,co
 
-- '/recipes/like', to recipes#create
+- GET /api/v1/backgrounds?location=denver,co
 
-- '/recipes/dislike', to recipes#create
+### For the following endpoints must send a JSON payload in the body of the request
 
-- '/cocktails/like' to cocktails#create
+#### After properly registering through the following endpoint you will be given an api key
 
-- '/cocktails/dislike', to cocktails#create
+- POST /api/v1/users
+  Content-Type: application/json
+  Accept: application/json
+
+{
+  "email": "whatever@example.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+- POST /api/v1/sessions
+  Content-Type: application/json
+  Accept: application/json
+
+{
+  "email": "whatever@example.com",
+  "password": "password"
+}
+- POST /api/v1/road_trip
+  Content-Type: application/json
+  Accept: application/json
+
+body:
+
+{
+  "origin": "Denver,CO",
+  "destination": "Pueblo,CO",
+  "api_key": "jgn983hy48thw9begh98h4539h4"
+}
 ```
 ### example request/response for GET /API/V1/USERS/1
 
