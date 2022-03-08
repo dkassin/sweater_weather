@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 07 Mar 2022 03:28:31 GMT
+      - Tue, 08 Mar 2022 00:07:15 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -29,19 +29,19 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - 6e803dd50cea495d-STL
+      - 6e87545d3801494d-STL
       Access-Control-Allow-Origin:
       - "*"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"7257a1595639b67794b1705149574029"
+      - W/"a75ee78094c833ffd72e77a963f08933"
       Set-Cookie:
-      - __cf_bm=vhxqGRJhZfNiHL9vADC.1Z4_ALgX4rnnEfkFghwL9Ds-1646623711-0-Ae3hGdZ6YddhndwpQ3MmwSIdBAnIpZAsZYPoy6r/d3Zt2nz2fMJqUYZwI+QhO18IJXIR6fekQPqClnUpBv7CYPo=;
-        path=/; expires=Mon, 07-Mar-22 03:58:31 GMT; domain=.pexels.com; HttpOnly;
+      - __cf_bm=fzoxkg6XvsRdbTKNK3kjOR0CEw4zcVRpZQnJpZ6k3So-1646698035-0-AbGrr6ul9NK/3b8BiQZDLGVj4Fma1SkEltSIDDV3CAClfuOco8mfbn9eW4ALvJwb25d/V3CsmH/+deIFsCD5dlk=;
+        path=/; expires=Tue, 08-Mar-22 00:37:15 GMT; domain=.pexels.com; HttpOnly;
         Secure; SameSite=None
-      - _mkra_stck=mysql%3A1646623716.7043202; path=/; max-age=10; expires=Mon, 07
-        Mar 2022 03:28:41 GMT; HttpOnly
+      - _mkra_stck=mysql%3A1646698040.0237381; path=/; max-age=10; expires=Tue, 08
+        Mar 2022 00:07:25 GMT; HttpOnly
       Cf-Cache-Status:
       - DYNAMIC
       Expect-Ct:
@@ -51,11 +51,11 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '20000'
       X-Request-Id:
-      - a0b418d8-a4d8-4655-a57d-e4f3e50c6faf
+      - 232a2a3f-4ac3-4357-b519-6935490dca6f
       X-Runtime:
-      - '0.061144'
+      - '0.073404'
       X-Server:
-      - anteater
+      - alpaca
       Vary:
       - Accept-Encoding
       Server:
@@ -64,7 +64,8 @@ http_interactions:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: '{"page":1,"per_page":15,"photos":[{"id":8373833,"width":2000,"height":3000,"url":"https://www.pexels.com/photo/photo-of-women-using-laptops-8373833/","photographer":"Darina
+      string: '{"page":1,"per_page":15,"photos":[{"id":7993899,"width":3897,"height":5845,"url":"https://www.pexels.com/photo/men-wearing-long-sleeves-talking-to-each-other-7993899/","photographer":"Thirdman","photographer_url":"https://www.pexels.com/@thirdman","photographer_id":3361091,"avg_color":"#777066","src":{"original":"https://images.pexels.com/photos/7993899/pexels-photo-7993899.jpeg","large2x":"https://images.pexels.com/photos/7993899/pexels-photo-7993899.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/7993899/pexels-photo-7993899.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/7993899/pexels-photo-7993899.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/7993899/pexels-photo-7993899.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/7993899/pexels-photo-7993899.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/7993899/pexels-photo-7993899.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/7993899/pexels-photo-7993899.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"alt":"Men
+        Wearing Long Sleeves Talking to Each Other "},{"id":8373833,"width":2000,"height":3000,"url":"https://www.pexels.com/photo/photo-of-women-using-laptops-8373833/","photographer":"Darina
         Belonogova","photographer_url":"https://www.pexels.com/@darina-belonogova","photographer_id":22470218,"avg_color":"#A8988B","src":{"original":"https://images.pexels.com/photos/8373833/pexels-photo-8373833.jpeg","large2x":"https://images.pexels.com/photos/8373833/pexels-photo-8373833.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/8373833/pexels-photo-8373833.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/8373833/pexels-photo-8373833.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/8373833/pexels-photo-8373833.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/8373833/pexels-photo-8373833.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/8373833/pexels-photo-8373833.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/8373833/pexels-photo-8373833.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"alt":"Photo
         of Women Using Laptops"},{"id":3184423,"width":4004,"height":6000,"url":"https://www.pexels.com/photo/photo-of-people-holding-each-other-s-hands-3184423/","photographer":"fauxels","photographer_url":"https://www.pexels.com/@fauxels","photographer_id":1281351,"avg_color":"#8B7D77","src":{"original":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg","large2x":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"alt":"Photo
         Of People Holding Each Other''s Hands"},{"id":3153198,"width":3781,"height":2521,"url":"https://www.pexels.com/photo/woman-sharing-her-presentation-with-her-colleagues-3153198/","photographer":"Canva
@@ -84,7 +85,6 @@ http_interactions:
         Women and Man Talking"},{"id":3184299,"width":5732,"height":3821,"url":"https://www.pexels.com/photo/photo-of-man-sitting-in-front-of-people-3184299/","photographer":"fauxels","photographer_url":"https://www.pexels.com/@fauxels","photographer_id":1281351,"avg_color":"#9F8E89","src":{"original":"https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg","large2x":"https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"alt":"Photo
         of Man Sitting in Front of People"},{"id":3182773,"width":6000,"height":4004,"url":"https://www.pexels.com/photo/top-view-photo-of-group-of-people-using-macbook-while-discussing-3182773/","photographer":"fauxels","photographer_url":"https://www.pexels.com/@fauxels","photographer_id":1281351,"avg_color":"#62554E","src":{"original":"https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg","large2x":"https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"alt":"Top
         View Photo of Group of People Using Macbook While Discussing"},{"id":3182765,"width":6000,"height":4169,"url":"https://www.pexels.com/photo/photo-of-people-talking-to-each-other-3182765/","photographer":"fauxels","photographer_url":"https://www.pexels.com/@fauxels","photographer_id":1281351,"avg_color":"#B1A79C","src":{"original":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg","large2x":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"alt":"Photo
-        Of People Talking To Each Other"},{"id":5862308,"width":4386,"height":6579,"url":"https://www.pexels.com/photo/vaccine-text-and-a-person-wearing-latex-glove-while-holding-a-syringe-on-pink-background-5862308/","photographer":"Thirdman","photographer_url":"https://www.pexels.com/@thirdman","photographer_id":3361091,"avg_color":"#EEC9D4","src":{"original":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg","large2x":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"alt":"Vaccine
-        Text and A Person Wearing Latex Glove While Holding a Syringe on Pink Background"}],"total_results":2233,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=15\u0026query=Denver%2CCO"}'
-  recorded_at: Mon, 07 Mar 2022 03:28:31 GMT
+        Of People Talking To Each Other"}],"total_results":2234,"next_page":"https://api.pexels.com/v1/search/?page=2\u0026per_page=15\u0026query=Denver%2CCO"}'
+  recorded_at: Tue, 08 Mar 2022 00:07:15 GMT
 recorded_with: VCR 6.0.0
