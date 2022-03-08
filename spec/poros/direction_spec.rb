@@ -26,7 +26,6 @@ RSpec.describe "Direction object" do
   expect(directions).to be_a Direction
   expect(directions.hour).to eq(1)
   expect(directions.min).to eq(45)
-  expect(directions.arrival_time).to be_a(Time)
   expect(directions.rounded_hours).to eq(2)
   end
 end

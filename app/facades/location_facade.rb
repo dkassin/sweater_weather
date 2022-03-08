@@ -9,7 +9,6 @@ class LocationFacade
     if directions[:info][:statuscode] == 402
       Invalid.new(directions)
     else
-      binding.pry
       Direction.new(directions)
     end
   end

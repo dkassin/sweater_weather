@@ -4,18 +4,22 @@ class Api::V1::RoadTripsController < ApplicationController
 
   def index
     directions = LocationFacade.get_directions(params[:origin], params[:destination])
-    forecast = ForecastFacade.get_forecast(@coordinates.lat, @coordinates.lng)
-    forecast_index = directions.rounded_hours - 1
+    if directions.message == []
+      forecast = ForecastFacade.get_forecast(@coordinates.lat, @coordinates.lng)
+      forecast_index = directions.rounded_hours - 1
 
-    if forecast_index < 0
-      forecast_current = forecast[:current]
-      render json: RoadTripSerializer.road_trip_serializer(directions, forecast_current, params[:origin], params[:destination])
-    elsif forecast_index <= 49
-      forecast_hour = forecast[:hourly][(directions.rounded_hours - 1)]
-      render json: RoadTripSerializer.road_trip_serializer(directions, forecast_hour, params[:origin], params[:destination])
+      if forecast_index < 0
+        forecast_current = forecast[:current]
+        render json: RoadTripSerializer.road_trip_serializer(directions, forecast_current, params[:origin], params[:destination])
+      elsif forecast_index <= 49
+        forecast_hour = forecast[:hourly][(directions.rounded_hours - 1)]
+        render json: RoadTripSerializer.road_trip_serializer(directions, forecast_hour, params[:origin], params[:destination])
+      else
+        forecast_daily = forecast[:daily][2]
+        render json: RoadTripSerializer.road_trip_serializer(forecast_daily, forecast_hour, params[:origin], params[:destination])
+      end
     else
-      forecast_daily = forecast[:daily][2]
-      render json: RoadTripSerializer.road_trip_serializer(forecast_daily, forecast_hour, params[:origin], params[:destination])
+      render json: RoadTripSerializer.invalid_trip(params[:origin], params[:destination])
     end
   end
 end
