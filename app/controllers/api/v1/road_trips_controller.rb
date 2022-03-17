@@ -15,7 +15,7 @@ class Api::V1::RoadTripsController < ApplicationController
         forecast_hour = forecast[:hourly][(directions.rounded_hours - 1)]
         render json: RoadTripSerializer.road_trip_serializer(directions, forecast_hour, params[:origin], params[:destination])
       else
-        forecast_daily = forecast[:daily][2]
+        forecast_index > forecast[:daily][2]
         render json: RoadTripSerializer.road_trip_serializer(forecast_daily, forecast_hour, params[:origin], params[:destination])
       end
     else
