@@ -4,6 +4,7 @@ RSpec.describe 'user API' do
     data =
     {
       "email": "whatever1@example.com",
+      "phone_number": "7733920487",
       "password": "password",
       "password_confirmation": "password"
     }
@@ -29,6 +30,7 @@ RSpec.describe 'user API' do
     data =
     {
       "email": "whatever1@example.com",
+      "phone_number": "7733920487",
       "password": "password"
     }
     headers = { 'CONTENT_TYPE' => 'application/json', "Accept" => 'application/json' }
@@ -46,6 +48,7 @@ RSpec.describe 'user API' do
     data =
     {
       "email": "test@email.com",
+      "phone_number": "7733920487",
       "password": "password",
       "password_confirmation": "password"
     }
@@ -63,6 +66,7 @@ RSpec.describe 'user API' do
     data =
     {
       "email": "test@example.com",
+      "phone_number": "7733920487",
       "password": "wrongpassword",
       "password_confirmation": "password"
     }

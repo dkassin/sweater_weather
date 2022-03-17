@@ -9,7 +9,7 @@ end
 private
 
   def user_params
-    params.permit(:email, :password, :password_confirmation, :auth_token)
+    params.permit(:email, :password, :phone_number, :password_confirmation, :auth_token)
   end
 
   def check_all_fields
