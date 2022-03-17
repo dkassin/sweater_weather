@@ -35,6 +35,7 @@ Your team is working in a service-oriented architecture. The front-end will comm
 - dotenv-rails
 - faraday
 - launchy
+- twilio-ruby
 
 ## Setup
 1. Clone this repository:
