@@ -12,6 +12,5 @@ RSpec.describe 'Twilio Service' do
     message = TwilioService.create_message(number)
 
     expect(message.sid).to be_a String
-    binding.pry
   end
 end
