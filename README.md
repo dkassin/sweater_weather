@@ -6,6 +6,8 @@ You are a back-end developer working on a team that is building an application t
 
 Your team is working in a service-oriented architecture. The front-end will communicate with your back-end through an API. Your job is to expose that API that satisfies the front-end team’s requirements.
 
+A call to the twilio REST api was also added to send a text message whenever logging in.
+
 ## Learning Goals
 - Expose an API that aggregates data from multiple external APIs
 - Expose an API that requires an authentication token
@@ -35,6 +37,7 @@ Your team is working in a service-oriented architecture. The front-end will comm
 - dotenv-rails
 - faraday
 - launchy
+- twilio-ruby
 
 ## Setup
 1. Clone this repository:

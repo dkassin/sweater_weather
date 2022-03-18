@@ -1,7 +1,7 @@
 require 'rails_helper'
 RSpec.describe 'session API' do
   it 'returns a session user', :vcr do
-    user = User.create(email: "test@email.com", password: "password", password_confirmation: "password")
+    user = User.create(email: "test@email.com", phone_number: "7733920487", password: "password", password_confirmation: "password")
     data =
     {
       "email": "test@email.com",
