@@ -191,6 +191,7 @@ At this point you should be taken to a page with an example JSON response for a 
   "email": "whatever@example.com",
   "password": "password",
   "password_confirmation": "password"
+  "phone_number": 7733920487
   }
 
 - POST /api/v1/sessions
